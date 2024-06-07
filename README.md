@@ -6,10 +6,13 @@ This app was created wit vite js
 
 Node v20.12.2
 Chrome 125.0.6422.142
+Vite 5.2.12
 
 ## Available scripts and steps to setup and run app
 
 With correct node version you must run:
+
+### `npm i -g vite`
 
 ### `npm i`
 
