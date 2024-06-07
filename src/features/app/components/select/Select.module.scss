@@ -1,0 +1,61 @@
+@import 'src/styles/functions';
+@import 'src/styles/mixins';
+@import 'src/styles/colors';
+
+.select {
+  position: relative;
+}
+
+.fieldset {
+  width: 100%;
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  outline: none;
+  background-color: transparent;
+  border: 0;
+  border-bottom: rem(2) solid $colorWhite;
+  box-sizing: border-box;
+  padding: rem(8) rem(16);
+  font-size: rem(16);
+  color: $colorWhite;
+}
+
+.dropdown {
+  width: 100%;
+  position: absolute;
+  top: rem(46);
+  margin: auto;
+  display: none;
+  flex-direction: column;
+  gap: rem(4);
+  background-color: $colorBlackDark;
+  overflow-x: auto;
+  max-height: rem(300);
+}
+
+.active {
+  display: flex;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  border: rem(2) solid $colorWhite;
+  box-sizing: border-box;
+  padding: rem(8) rem(16);
+  gap: rem(8);
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba($colorWhite, 0.25);
+  }
+}
+
+.itemActive {
+  background-color: rgba($colorWhite, 0.25);
+}

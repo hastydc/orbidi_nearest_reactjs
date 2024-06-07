@@ -1,11 +1,15 @@
 import { createContext, useState } from 'react';
+import { City } from 'src/models/city.interface';
 
 /**
  * App context to define shared states
  */
 export const AppContext = createContext({
-  coordinates: { latitude: 0, longitude: 0 },
-  setCoordinates: (value: any) => value,
+  nearest: [],
+  setNearest: (value: any) => value,
+
+  city: { name: '', country: '', lat: 0, lng: 0 },
+  setCity: (value: any) => value,
 });
 
 /**
@@ -14,11 +18,19 @@ export const AppContext = createContext({
  * @returns {Object} component
  */
 export const AppContextProvider = ({ children }: any) => {
-  const [coordinates, setCoordinates] = useState({ latitude: 0, longitude: 0 });
+  const [nearest, setNearest] = useState([]);
+  const [city, setCity] = useState<City>({
+    name: '',
+    country: '',
+    lat: 0,
+    lng: 0,
+  });
 
   const value = {
-    coordinates,
-    setCoordinates,
+    nearest,
+    setNearest,
+    city,
+    setCity,
   };
 
   return (

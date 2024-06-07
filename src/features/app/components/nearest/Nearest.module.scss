@@ -1,0 +1,23 @@
+@import 'src/styles/functions';
+@import 'src/styles/colors';
+
+.content {
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: rem(32);
+  width: 100%;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  gap: rem(8);
+  align-items: center;
+
+  svg {
+  }
+}

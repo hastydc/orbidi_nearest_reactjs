@@ -1,3 +1,8 @@
 {
-  "hi": "His"
+  "select": "Select",
+  "pleaseChooseCity": "Please choose a city",
+  "choose": "Choose",
+  "response": "Response",
+  "theseAreTheThreeMoreNearestCities": "These are the three more nearest cities of <strong>{{city}}</strong>",
+  "waitingForCity": "Waiting for city"
 }

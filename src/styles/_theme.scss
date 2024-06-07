@@ -1,4 +1,5 @@
 @import 'src/styles/colors';
+@import 'src/styles/functions';
 
 body {
   margin: 0;
@@ -6,4 +7,8 @@ body {
   font-family: sans-serif;
   background-color: $colorBlackLight;
   color: $colorWhite;
+}
+
+::-webkit-scrollbar {
+  width: rem(0);
 }
