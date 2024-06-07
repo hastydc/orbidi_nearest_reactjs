@@ -5,6 +5,10 @@ import { FaLocationDot } from 'react-icons/fa6';
 import { useContext } from 'react';
 import { AppContext } from '../../App.context';
 
+/**
+ * Nearest component
+ * @returns {Object} component
+ */
 const Nearest = () => {
   const { t } = useTranslation();
   const { city, nearest } = useContext(AppContext);

@@ -1,10 +1,18 @@
 import Style from './Title.module.scss';
 
+/**
+ * Title props
+ */
 type TitleProps = {
   title: string;
   subTitle: string;
 };
 
+/**
+ * Title component
+ * @param {TitleProps} props
+ * @returns {Object} component
+ */
 const Title = ({ title, subTitle }: TitleProps) => {
   return (
     <>

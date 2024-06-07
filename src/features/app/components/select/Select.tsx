@@ -4,6 +4,10 @@ import Style from './Select.module.scss';
 import { FaTreeCity } from 'react-icons/fa6';
 import useSelect from './hooks/useSelect';
 
+/**
+ * Select component
+ * @returns {Object} component
+ */
 const Select = () => {
   const { t } = useTranslation();
   const { inputRef, cityList, city, dropdown, search, setCity, setDropdown } =

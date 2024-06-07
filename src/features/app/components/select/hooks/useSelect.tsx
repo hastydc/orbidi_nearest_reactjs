@@ -4,12 +4,19 @@ import { AppContext } from '../../../App.context';
 import { City } from 'src/models/city.interface';
 import Cities from '../../../../../db/cities.json';
 
+/**
+ * Use select custom hook with functions of select
+ * @returns {Object} response
+ */
 const useSelect = () => {
   const [cityList, setCityList] = useState<City[]>([]);
   const [dropdown, setDropdown] = useState(false);
   const { city, setCity, setNearest } = useContext(AppContext);
   const inputRef = useRef(null);
 
+  /**
+   * Search function
+   */
   const search = (): void => {
     const value = (inputRef!.current! as any).value ?? '';
 
@@ -23,6 +30,9 @@ const useSelect = () => {
     setCityList(list);
   };
 
+  /**
+   * Find nearest points by geoLocation
+   */
   const findNearest = (): void => {
     const opts = {
       yName: 'lat',
