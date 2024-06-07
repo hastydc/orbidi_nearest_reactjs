@@ -29,12 +29,13 @@ const Select = () => {
               onKeyUp={() => search()}
               ref={inputRef}
               onClick={() => setDropdown(true)}
+              autoFocus={true}
             />
           </div>
 
           <div className={`${Style.dropdown} ${dropdown ? Style.active : ''}`}>
             {cityList.map((localCity, index) => (
-              <div
+              <button
                 className={`${Style.item} ${
                   city.name === localCity.name ? Style.itemActive : ''
                 }`}
@@ -49,7 +50,7 @@ const Select = () => {
                 <span>
                   {localCity.name}, {localCity.country}
                 </span>
-              </div>
+              </button>
             ))}
           </div>
         </div>

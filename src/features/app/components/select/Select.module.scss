@@ -50,6 +50,8 @@
   padding: rem(8) rem(16);
   gap: rem(8);
   cursor: pointer;
+  background-color: transparent;
+  color: $colorWhite;
 
   &:hover {
     background-color: rgba($colorWhite, 0.25);
