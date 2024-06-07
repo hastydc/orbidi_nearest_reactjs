@@ -1,0 +1,9 @@
+@import 'src/styles/colors';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: $colorBlackLight;
+  color: $colorWhite;
+}

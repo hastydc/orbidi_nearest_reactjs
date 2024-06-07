@@ -3,7 +3,7 @@
  */
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import translationEN from 'src/locales/en.json';
+import translationEN from './locales/en.json';
 
 /**
  * Object with lang files related

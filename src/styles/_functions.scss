@@ -1,0 +1,7 @@
+/**
+* Function to cast px to rem
+*/
+@function rem($value) {
+  $remValue: calc($value / 16) + rem;
+  @return $remValue;
+}

@@ -1,0 +1,56 @@
+@import 'src/styles/functions';
+@import 'src/styles/colors';
+@import 'src/styles/mixins';
+
+.main {
+  display: flex;
+  flex-direction: column;
+
+  @include media(tablet) {
+    flex-direction: row;
+  }
+}
+
+.sidebar {
+  height: rem(64);
+  width: 100%;
+  background-color: $colorBlackDark;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: rem(1) solid $colorWhite;
+
+  @include media(tablet) {
+    height: 100vh;
+    width: rem(128);
+    border: 0;
+    border-right: rem(1) solid $colorWhite;
+  }
+}
+
+.mainContent {
+  box-sizing: border-box;
+  padding: rem(32);
+  padding-bottom: rem(80);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: rem(32);
+
+  @include media(tablet) {
+    margin-left: rem(128);
+    flex: 1;
+    flex-direction: row;
+    padding: rem(64);
+  }
+}
+
+.card {
+  width: 100%;
+
+  @include media(tablet) {
+    width: 50%;
+  }
+}
