@@ -28,7 +28,7 @@ const Select = () => {
               className={Style.input}
               onKeyUp={() => search()}
               ref={inputRef}
-              onClick={() => setDropdown(true)}
+              onFocus={() => setDropdown(true)}
               autoFocus={true}
             />
           </div>
